@@ -1,0 +1,274 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+}
+
+.text__nvbr{
+    margin-top: 20px;
+    margin-right: 20px;
+    opacity: 0.5;
+}
+
+.text__nvbr:hover{
+    opacity: 1;
+}
+
+.title{
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+.about__title{
+    display: flex;
+    justify-content: center;
+    opacity: 0.7;
+}
+
+.img{
+    margin-top: 70px;
+    background: no-repeat url('./img/main.jpg') ;
+    height: 71vh;
+    width: 100%;
+}
+
+.interior{
+    margin-top: 50px;
+    position: relative;
+    height: 50vh;
+}
+
+.servises{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
+    margin-top: 150px;
+}
+
+.servises__rotate{
+    position: absolute;
+    right: 240px;
+}
+
+.text__servises{
+    transform: rotate(-90deg);
+    opacity: 0.6;
+    position: relative;
+}
+
+.servise__rotate{
+    transform: rotate(90deg);
+    position: relative;
+}
+
+.text__servises:first-child{
+    margin-bottom: 80px;
+}
+
+.text__servises:last-child{
+    margin-top: 50px;
+}
+
+.servise__rotate:last-child{
+    margin-top: 84px;
+}
+
+.text__servises:last-child::after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: -2px;
+    height: 2px;
+    width: 220px;
+    background: lightgrey;
+}
+
+.servise__rotate:last-child::after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: -198px;
+    height: 2px;
+    width: 244px;
+    background: lightgrey;
+}
+
+.interior__name{
+    position: absolute;
+    left: 415px;
+    top: 167px;
+    width: 350px;
+}
+
+.interior__name__rotate{
+    margin-left: 710px;
+}
+
+.interior__title{
+    opacity: 0.7;
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+.interior__text{
+    opacity: 0.5;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.interior__img{
+    position: absolute;
+    right: 237px;
+    top: 124px;
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.interior__rotate{
+    position: absolute;
+    left: 327px;
+}
+
+
+.interior__img-sub{
+    width: 300px;
+    height: 100px;
+}
+
+.squere1{
+    background: url('./img/bedroom.jpg');
+    margin-right: 50px;
+    height: 150px;
+}
+
+.squere2{
+    background: url('./img/kitchen.jpeg');
+    height: 50px;
+    margin-right: 50px;
+}
+
+.squere3{
+    background: url('./img/kitchen2.jpg');
+    margin-right: 30px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.squere4{
+    background: url('./img/kitchen.jpg');
+    height: 150px;
+    margin-top: -50px;
+}
+
+.img__media-interiror{
+    opacity: 0;
+}
+
+.img__media-exterior{
+    opacity: 0;
+}
+
+.img__media-modeling{
+    opacity: 0;
+}
+
+@media (max-width: 898px) {
+    .container{
+        width: 700px;
+        margin: 0 auto;
+    }
+    .interior{
+        position: relative;
+    }
+    
+    .interior__name{
+        position: absolute;
+        top: 0;
+        left: 150px;
+    }
+    .interior__name__rotate{
+        position: absolute;
+        top: 0;
+        left: -249px;
+    }
+    .interior__img{
+        width: 100%;
+    }
+    .servises{
+        position: absolute;
+        top: -125px;
+        left: 61px;
+        height: 400px;
+    }
+    .servises__rotate{
+        position: absolute;
+        top: -879px;
+        right: -678px;
+    }
+    .servise__rotate{
+        transform: rotate(-90deg);
+    }
+    .servise__rotate:last-child::after{
+        margin-left: 162px;
+    }
+    .text__servises:last-child::after{
+        width: 435px;
+    }
+    .squere1{
+        opacity: 0;
+    }
+    .squere2{
+        opacity: 0;
+    }
+    .squere3{
+        opacity: 0;
+    }
+    .squere4{
+        opacity: 0;
+    }
+    .img__media-interiror{
+        opacity: 1;
+    }
+    .img__media-exterior{
+        opacity: 1;
+    }
+    
+    .img__media-modeling{
+        opacity: 1;
+    }
+    
+    .img__media{
+        width: 740px;
+        height: 300px;
+        margin-left: 128px;
+        margin-top: 145px;
+    }
+    .img__rotate{
+        padding-right: 72px;
+    }
+}
+
+
+
+
+
+
+
